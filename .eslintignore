@@ -1,0 +1,16 @@
+test/*
+.helm
+.babelrc
+.eslintrc.js
+/config
+/scripts
+
+/node_modules/
+/.storybook/
+/public/
+/server/
+/*.js
+/build/
+/dist/
+/reports
+.scannerwork

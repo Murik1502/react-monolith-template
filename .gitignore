@@ -1,0 +1,7 @@
+.yarn/unplugged/
+.yarn/cache/
+node_modules/
+dist/
+.vscode/
+.idea/
+.DS_Store
