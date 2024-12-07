@@ -1,5 +1,6 @@
 # UI Monolit Template
 Монолитный шаблон для React + Webpack + TS
+Основан на архитектуре FSD
 
 --- 
 
