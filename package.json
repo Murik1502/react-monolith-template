@@ -1,5 +1,5 @@
 {
-  "name": "monolit-template",
+  "name": "monolith-template",
   "version": "1.0.0",
   "main": "index.js",
   "license": "ISC",
@@ -13,16 +13,13 @@
     "check": "npm run prettier && eslint --fix ./src"
   },
   "dependencies": {
-    "@tanstack/react-query": "^5.62.2",
     "axios": "1.7.8",
     "dotenv": "16.4.6",
     "js-cookie": "^3.0.5",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-router-dom": "7.0.2",
-    "react-toastify": "^10.0.6",
-    "sass": "^1.81.1",
-    "webpack-bundle-analyzer": "4.10.2"
+    "sass": "^1.81.1"
   },
   "devDependencies": {
     "@eslint/compat": "^1.2.3",
@@ -32,10 +29,9 @@
     "@types/js-cookie": "^3.0.6",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
-    "@types/webpack-bundle-analyzer": "4.7.0",
     "@typescript-eslint/eslint-plugin": "^8.17.0",
     "@typescript-eslint/parser": "^8.17.0",
-    "css-loader": "7.1.2",
+    "css-loader": "6.9.1",
     "eslint": "9.16.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-react": "7.37.2",
@@ -47,8 +43,8 @@
     "html-webpack-plugin": "5.6.3",
     "husky": "9.1.7",
     "prettier": "3.4.1",
-    "sass-loader": "16.0.3",
-    "style-loader": "4.0.0",
+    "sass-loader": "13.3.2 ",
+    "style-loader": "3.3.4",
     "ts-loader": "9.5.1",
     "ts-node": "10.9.2",
     "typescript": "5.7.2",

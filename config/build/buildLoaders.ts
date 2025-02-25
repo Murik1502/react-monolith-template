@@ -5,7 +5,7 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
   const isDev = options.mode === 'development';
 
   const assetLoader = {
-    test: /\.(png|jpg|jpeg|gif)$/i,
+    test: /\.(png|jpg|jpeg|gif|woff|woff2|eot|ttf|otf)$/i,
     type: 'asset/resource',
   };
 
@@ -16,16 +16,6 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
         loader: '@svgr/webpack',
         options: {
           icon: true,
-          svgoConfig: {
-            plugins: [
-              {
-                name: 'convertColors',
-                params: {
-                  currentColor: true,
-                },
-              },
-            ],
-          },
         },
       },
     ],

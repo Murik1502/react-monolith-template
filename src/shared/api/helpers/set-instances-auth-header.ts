@@ -1,10 +1,11 @@
+import { BASE_URL } from './../config/axios';
 import axios, { type CreateAxiosDefaults } from 'axios';
-import { errorCatch } from './error';
+import { errorCatch } from './errorCatch';
 import { getAccessToken, removeFromStorage } from '@/shared/api/services/auth-token.service';
 import { authService } from '@/shared/api/services/auth.service';
 
 const options: CreateAxiosDefaults = {
-  baseURL: process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}/api` : 'http://localhost:3000/api',
+  baseURL: process.env.BASE_URL ? `${BASE_URL}` : 'http://localhost:3000/api/v1/',
   headers: {
     'Content-Type': 'application/json',
   },

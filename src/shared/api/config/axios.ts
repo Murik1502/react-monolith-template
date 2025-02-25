@@ -1,1 +1,1 @@
-export const BASE_URL = `${process.env.API_URL}/api`;
+export const BASE_URL = `${process.env.BASE_URL}/api/v1`;

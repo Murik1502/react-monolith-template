@@ -9,7 +9,6 @@ interface EnvVariables {
   analyzer?: boolean;
   port?: number;
   file?: string;
-  keycloak?: string;
 }
 
 export default (env: EnvVariables) => {
@@ -17,7 +16,7 @@ export default (env: EnvVariables) => {
 
   const paths: BuildPaths = {
     output: path.resolve(__dirname, 'dist'),
-    entry: path.resolve(__dirname, 'src', 'index.ts'),
+    entry: path.resolve(__dirname, 'src', 'index.tsx'),
     html: path.resolve(__dirname, 'public', 'index.html'),
     src: path.resolve(__dirname, 'src'),
   };

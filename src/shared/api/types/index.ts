@@ -3,13 +3,6 @@ export interface IAuthForm {
   password: string;
 }
 
-export interface IUser {
-  id: number;
-  name?: string;
-  email: string;
-}
-
 export interface IAuthResponse {
   accessToken: string;
-  user: IUser;
 }
